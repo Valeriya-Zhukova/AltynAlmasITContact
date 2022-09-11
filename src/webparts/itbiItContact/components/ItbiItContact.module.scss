@@ -1,0 +1,114 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.itbiItContact {
+	.container {
+		max-width: 380px;
+		height: 150px;
+		padding: 16px 10px;
+		border: 1px solid rgb(218, 218, 218);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-self: center;
+		font-family: 'Segoe UI Web (West European)', Segoe UI, -apple-system,
+			BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.wrapper {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.carousel {
+		width: 100%;
+		height: 120px;
+	}
+
+	.header {
+		color: #fff;
+		background-color: #0b3752;
+		padding: 5px;
+		font-size: 1.1rem;
+		text-align: center;
+		z-index: 0;
+		border-radius: 2px;
+	}
+
+	.icon {
+		margin-top: 5px;
+	}
+
+	.icon a {
+		display: block;
+		text-decoration: none;
+		position: relative;
+		color: #fff;
+	}
+
+	.icon a:hover {
+		text-decoration: none;
+	}
+
+	.tooltip {
+		visibility: hidden;
+		width: 65px;
+		border-radius: 6px;
+		padding: 5px 0;
+		position: absolute;
+		top: -5px;
+		left: 115%;
+		opacity: 0;
+		transition: opacity 0.3s;
+		background-color: #9a9fa3;
+		text-align: center;
+		z-index: 3;
+		font-size: 0.8rem;
+	}
+
+	.tooltip::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: 100%;
+		margin-top: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: transparent #9a9fa3 transparent transparent;
+	}
+
+	.icon a:hover .tooltip {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.icon a i {
+		font-size: 32px;
+		color: #9a9fa3;
+	}
+
+	.icon a i:hover {
+		color: #0b3752;
+	}
+
+	.project {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.title {
+		color: #1481e4;
+		font-size: 1rem;
+		font-weight: 600;
+	}
+
+	.mail {
+		color: #0b3753;
+		font-size: 0.8rem;
+	}
+}
